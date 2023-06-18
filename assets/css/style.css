@@ -14,6 +14,7 @@
 body {
   font-family: "BaksoSapi", sans-serif;
   color: #444444;
+  background: #f0a35f;
 }
 
 a {
@@ -33,6 +34,7 @@ h4,
 h5,
 h6 {
   font-family: "BaksoSapi", sans-serif;
+
 }
 
 /*--------------------------------------------------------------
@@ -158,6 +160,12 @@ h6 {
   gap: 20px;
 }
 
+.row-exp{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
 .services__item {
   padding: 20px;
   /* background: rgba(245,245,245,0.6); */
@@ -170,38 +178,50 @@ h6 {
 
 .services__item:hover i {
   transition: all 0.3s;
-  color: var(--grey);
+  color: white;
 }
 
 .services__item i {
   transition: all 0.3s;
   font-size: 30px;
   margin: 20px 0;
-  color: var(--blueReact);
+  color: #917cb4;
 }
 
 .services__item h3 {
-  color: var(--grey);
+  color: white;
   margin-bottom: 15px;
 }
 
 .section__title {
-  color: var(--grey);
-  font-size: 25px;
+  color: white;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  
+  padding-top: 20px;
 }
 
 .section__subtitle {
-  color: var(--grey);
+  color: white;
   text-align: center;
   margin-bottom: 20px;
 }
 
+#desc_services { 
+color: white; }
+
 
 /*------------------*/
+
+
+/*GRID NUMEROS*/
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -209,6 +229,88 @@ h6 {
 /**
 * Desktop Navigation 
 */
+
+
+/*DIV CONTACTO*/
+
+/*.div_contacto{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}*/
+
+.div_contacto{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+
+/*DIV MAP*/
+
+.div_map {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+/*-----*/
+
+/*DIV FORM*/
+
+.div_form{
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+form {
+
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.tiene_mascota{
+  display: flex;
+}
+
+#tiene_mascota{
+  display: flex;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*------*/
+
 .navbar {
   padding: 0;
 }
@@ -355,12 +457,19 @@ h6 {
 }
 
 @media (max-width: 991px) {
+
+
   .mobile-nav-toggle {
     display: block;
   }
 
   .navbar ul {
     display: none;
+  }
+
+  .row { 
+
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -808,6 +917,12 @@ section {
   padding: 2em;
 }
 
+#services {
+  background-image: url(https://ticoroadagency.com/laberinto/wp-content/uploads/2023/02/4N7A3164-scaled.jpg);
+      background-position: center right;
+    background-size: cover;
+}
+
 main {
   min-height: 40px;
   margin-top: 4.65rem;
@@ -820,7 +935,7 @@ main {
 }
 
 .section-bg {
-  background-color: #f9f8ff;
+  background-color: #f0a35f;
 }
 
 .section-title {
@@ -836,12 +951,15 @@ main {
   padding-bottom: 10px;
   position: relative;
   margin-top: 20px;
+  color: white;
 }
 
 .section-title h2 {
   font-size: 1.4rem;
   margin-bottom: 0;
+  color: white;
 }
+
 
 /*--------------------------------------------------------------
 # videosYT
@@ -898,6 +1016,15 @@ main {
   margin: 0;
   font-size: 0.9rem;
   color: #949494;
+}
+
+.img-fluid {
+  margin-bottom: 15px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+    
 }
 
 /*--------------------------------------------------------------
@@ -986,6 +1113,7 @@ main {
   .testimonials {
     margin: 30px 10px;
   }
+ 
 }
 
 /*--------------------------------------------------------------
@@ -994,12 +1122,10 @@ main {
 #footer {
   color: #fff;
   font-size: 0.9rem;
-  background: #2c637f;
+  background: #f0a35f;
 }
 
-#footer .copyright-wrap {
-  border-top: 1px solid #8577fb;
-}
+
 
 #footer .credits {
   padding-top: 5px;
