@@ -136,6 +136,10 @@ section#deptos{
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+
+
+
 }
 
 /*--------------------------------------------------------------
@@ -1184,7 +1188,26 @@ main {
   .testimonials {
     margin: 30px 10px;
   }
+ .img-fluid {
+  margin-bottom: 15px;
  
+  justify-content: center;
+  display: flex;
+  align-items: center;
+    
+}
+
+#hero{
+  display: contents;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
 }
 
 /*--------------------------------------------------------------
