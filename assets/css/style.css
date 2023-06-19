@@ -1190,11 +1190,15 @@ main {
   }
  .img-fluid {
   margin-bottom: 15px;
- 
+
   justify-content: center;
   display: flex;
   align-items: center;
     
+}
+
+.logo{
+  width: 160px;
 }
 
 #hero{
