@@ -1204,11 +1204,14 @@ main {
 #hero{
   display: contents;
 }
+#services{
+   margin-top: 650px;
+}
 
 .services__grid {
   display: block;
 
-  margin-top: 650px;
+ 
 }
 #desc_services{display: none}
 .services__item{
@@ -1218,6 +1221,7 @@ main {
 .contacto label{
   font-size: 15px;
   letter-spacing:0;
+  font-weight: 0;
 }
 }
 
