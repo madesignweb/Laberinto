@@ -1206,12 +1206,19 @@ main {
 }
 
 .services__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  display: block;
+
+  margin-top: 650px;
+}
+#desc_services{display: none}
+.services__item{
+  padding: 0px;
 }
 
-
+.contacto label{
+  font-size: 15px;
+  letter-spacing:0;
+}
 }
 
 /*--------------------------------------------------------------
