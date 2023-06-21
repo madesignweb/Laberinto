@@ -801,6 +801,7 @@ margin-bottom: 15px;
   #hero h2 {
     font-size: 28px;
   }
+  .services__grid{display: block;}
 }
 
 @media (min-width: 1024px) {
@@ -1094,7 +1095,7 @@ main {
 }
 
 .img-fluid {
-  margin-bottom: 15px;
+/*  margin-bottom: 15px;*/
   width: 100%;
   justify-content: center;
   display: flex;
@@ -1197,9 +1198,9 @@ main {
     
 }
 
-.logo{
+/*.logo{
   width: 160px;
-}
+}*/
 
 #services{
   display: block;
