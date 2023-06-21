@@ -17,8 +17,8 @@
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="magnific-popup.css"/>
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    
 
     <script
             src="https://kit.fontawesome.com/24b6734411.js"
@@ -504,28 +504,29 @@
     <div class="div_contacto">
 
         <div class="div_form">
-            <form class="form">
+            <form class="form" action="https://formspree.io/f/mgebgqgr"
+  method="POST">
                 <label id="solo" for="nombre">Solo para Familias</label>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input class="input-form" type="text" id="nombre" name="nombre" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input class="input-form" type="email" id="email" name="email" required>
 
                 <label for="fecha-desde">Fecha desde:</label>
-                <input type="date" id="fecha-desde" name="fecha-desde" required>
+                <input class="input-form" type="date" id="fecha-desde" name="fecha-desde" required>
 
                 <label for="fecha-hasta">Fecha hasta:</label>
-                <input type="date" id="fecha-hasta" name="fecha-hasta" required>
+                <input class="input-form" type="date" id="fecha-hasta" name="fecha-hasta" required>
                 <div class="tiene">
                     <label class="tiene-mascota" for="tiene-mascota" style="position:absolute;">¿Tiene mascota?</label>
                     <input type="checkbox" id="tiene-mascota" name="tiene-mascota">
                 </div>
                 <label for="cantidad-personas">Cantidad de personas (hasta 7):</label>
-                <input type="number" id="cantidad-personas" name="cantidad-personas" min="1" max="7" required>
+                <input class="input-form" type="number" id="cantidad-personas" name="cantidad-personas" min="1" max="7" required>
 
                 <label for="comentarios">Comentarios:</label>
-                <textarea id="comentarios" name="comentarios"></textarea>
+                <textarea class="input-form" id="comentarios" name="comentarios"></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -660,7 +661,9 @@
 
 
 </script>
-<!-- <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script> -->
+
+
+
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

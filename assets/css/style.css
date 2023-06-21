@@ -38,19 +38,19 @@ h6 {
 }
 
 section {
-  scroll-margin-top: 95px;
+  scroll-margin-top: 82px;
 }
 
 section#deptos{
-  scroll-margin-top: 120px; 
+  scroll-margin-top: 105px; 
 }
 
 #exp{
-  scroll-margin-top: 120px;
+  scroll-margin-top: 105px;
 }
 
 #contacto{
-  scroll-margin-top: 120px;
+  scroll-margin-top: 105px;
 }
 
 /*--------------------------------------------------------------
@@ -375,7 +375,9 @@ margin-bottom: 15px;
 
 .contacto label{
   color:#5b82c2;
-  font-size: 30px;
+  font-size: 20px;
+  letter-spacing:0;
+  font-weight: 0;
 
 }
 
@@ -571,10 +573,10 @@ margin-bottom: 15px;
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+/*  bottom: 15px;*/
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #f0a35f;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -1088,6 +1090,10 @@ main {
   margin: 0;
 }
 
+.input-form{
+  color: chocolate;
+}
+
 .videosYT .videoYT-content .publicado {
   margin: 0;
   font-size: 0.9rem;
@@ -1227,6 +1233,7 @@ main {
   font-size: 15px;
   letter-spacing:0;
   font-weight: 0;
+  color:#5b82c2;
 }
 }
 
