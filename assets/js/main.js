@@ -126,29 +126,66 @@
     onscroll(document, toggleBacktotop);
   }
 
-  /**
-   * Mobile nav toggle
-   */
-  on("click", ".mobile-nav-toggle", function (e) {
-    select("#navbar").classList.toggle("navbar-mobile");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
+  // /**
+  //  * Mobile nav toggle
+  //  */
+  // on("click", ".mobile-nav-toggle", function (e) {
+  //   select("#navbar").classList.toggle("navbar-mobile");
+  //   this.classList.toggle("bi-list");
+  //   this.classList.toggle("bi-x");
+  // });
+
+  // /**
+  //  * Mobile nav dropdowns activate
+  //  */
+  // on(
+  //   "click",
+  //   ".navbar .dropdown > a",
+  //   function (e) {
+  //     if (select("#navbar").classList.contains("navbar-mobile")) {
+  //       e.preventDefault();
+  //       this.nextElementSibling.classList.toggle("dropdown-active");
+  //     }
+  //   },
+  //   true
+  // );
+
+
+// TUTE
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector("#navbar");
+  var mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+
+  mobileNavToggle.addEventListener("click", function () {
+    navbar.classList.toggle("navbar-mobile");
+    mobileNavToggle.classList.toggle("bi-list");
+    mobileNavToggle.classList.toggle("bi-x");
   });
 
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on(
-    "click",
-    ".navbar .dropdown > a",
-    function (e) {
-      if (select("#navbar").classList.contains("navbar-mobile")) {
+  var dropdownLinks = document.querySelectorAll(".navbar .dropdown > a");
+  dropdownLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      if (navbar.classList.contains("navbar-mobile")) {
         e.preventDefault();
         this.nextElementSibling.classList.toggle("dropdown-active");
       }
-    },
-    true
-  );
+    });
+  });
+
+  document.addEventListener("click", function (e) {
+    var isNavbarToggle = e.target.matches(".mobile-nav-toggle");
+    var isNavbarMobile = navbar.classList.contains("navbar-mobile");
+
+    if (!isNavbarToggle && isNavbarMobile) {
+      navbar.classList.remove("navbar-mobile");
+      mobileNavToggle.classList.remove("bi-x");
+      mobileNavToggle.classList.add("bi-list");
+    }
+  });
+});
+
+
+
 
   /**
    * Scrool with ofset on links with a class name .scrollto
