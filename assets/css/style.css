@@ -1190,7 +1190,7 @@ main {
     margin: 30px 10px;
   }
  .img-fluid {
-  margin-bottom: 15px;
+/*  margin-bottom: 15px;*/
 
   justify-content: center;
   display: flex;
@@ -1198,9 +1198,9 @@ main {
     
 }
 
-/*.logo{
-  width: 160px;
-}*/
+.logo{
+  width: 140px;
+}
 
 #services{
   display: block;
