@@ -271,6 +271,7 @@ color: white; }
   margin-bottom: 20px;
   /*align-items: center;
     gap: 100px;*/
+    gap: 50px;
 }
 
 
@@ -291,6 +292,12 @@ color: white; }
   justify-content: center;
   align-items: center;
 }
+
+#mapa{
+  width:400px; 
+  height:644px;
+}
+
 
 
 
@@ -801,11 +808,21 @@ margin-bottom: 15px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 826px) {
   #hero h2 {
     font-size: 28px;
   }
   .services__grid{display: block;}
+  .div_contacto{display: block;
+    }
+  .div_form{display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;}
+    #mapa{
+  width:506px; 
+  height:644px;
+}
 }
 
 @media (min-width: 1024px) {
