@@ -269,6 +269,8 @@ color: white; }
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  /*align-items: center;
+    gap: 100px;*/
 }
 
 

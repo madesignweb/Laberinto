@@ -1191,6 +1191,7 @@ input, select, textarea {
 		background: rgba(31, 34, 36, 0.925);
 		box-shadow: 0 1em 3em 0.5em rgba(0, 0, 0, 0.25);
 		cursor: default;
+
 	}
 
 		.poptrox-popup:before {
@@ -1244,11 +1245,12 @@ input, select, textarea {
 			cursor: pointer;
 			height: 8em;
 			margin-top: -4em;
-			opacity: 0;
+			opacity: 1.0;
 			position: absolute;
 			top: 50%;
 			width: 6em;
 			z-index: 2;
+
 		}
 
 		.poptrox-popup .nav-previous {
