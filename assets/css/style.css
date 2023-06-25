@@ -322,13 +322,6 @@ label {
 
 }
 
-/*.tiene_mascota{
-  display: flex;
-}
-
-#tiene_mascota{
-  display: flex;
-}*/
 
 input,
 textarea {
@@ -368,12 +361,14 @@ margin-bottom: 15px;
 }
 
 .tiene{
-  position: relative;
-  margin: 10px 0
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
-.tiene_mascota{
-  position: absolute!imp; 
+#tiene-mascota{
+  width: 20px;
+  transform: scale(1.4);
 }
 
 .contacto{
@@ -820,8 +815,8 @@ margin-bottom: 15px;
     justify-content: center;
     margin-bottom: 15px;}
     #mapa{
-  width:506px; 
-  height:644px;
+  width:491px; 
+  height:598px;
 }
 }
 
