@@ -1341,13 +1341,14 @@ input, select, textarea {
 			.poptrox-popup .nav-previous,
 			.poptrox-popup .nav-next {
 				background-size: 4em;
+				opacity: 1.0;
 			}
 
 		}
 
 		@media screen and (max-width: 736px) {
 
-			.poptrox-popup:before {
+			/*.poptrox-popup:before {
 				display: none;
 			}
 
@@ -1359,6 +1360,15 @@ input, select, textarea {
 			.poptrox-popup .nav-previous,
 			.poptrox-popup .nav-next {
 				display: none !important;
+			}*/
+			.poptrox-popup .closer {
+				background-size: 3em;
+			}
+
+			.poptrox-popup .nav-previous,
+			.poptrox-popup .nav-next {
+				background-size: 4em;
+				opacity: 1.0;
 			}
 
 		}
