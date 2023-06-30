@@ -1125,7 +1125,7 @@ main {
 
 .img-fluid {
 /*  margin-bottom: 15px;*/
-  width: 100%;
+/*  width: 100%;*/
   justify-content: center;
   display: flex;
   align-items: center;
