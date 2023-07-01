@@ -136,6 +136,25 @@ input, select, textarea {
 	appearance: none;
 }
 
+.header {
+	    display: flex;
+    justify-content: space-between;
+
+}
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+  z-index: 9999;
+}
+
+#whatsapp-button img {
+  width: 60px;
+  height: 60px;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {

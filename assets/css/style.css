@@ -203,11 +203,11 @@ section#deptos{
   grid-column: 3; /* Establece la posición en la tercera columna */
 }
 
-.services__item:hover i {
+/*.services__item:hover i {
   transition: all 0.3s;
   color: white;
 }
-
+*/
 .services__item i {
   transition: all 0.3s;
   font-size: 30px;
@@ -281,7 +281,7 @@ color: white; }
 .div_map {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  
 }
 /*-----*/
 
@@ -295,7 +295,7 @@ color: white; }
 
 #mapa{
   width:400px; 
-  height:644px;
+  
 }
 
 
@@ -322,6 +322,17 @@ label {
 
 }
 
+#whatsapp-button {
+  position: fixed;
+  bottom: 5px;
+  right: 80px;
+  z-index: 9999;
+}
+
+#whatsapp-button img {
+  width: 60px;
+  height: 60px;
+}
 
 input,
 textarea {
@@ -810,7 +821,10 @@ color:#8d7cb0 }
   #hero h2 {
     font-size: 28px;
   }
-  .services__grid{display: block;}
+  .services__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .div_contacto{display: block;
     }
   .div_form{display: flex;
@@ -819,10 +833,10 @@ color:#8d7cb0 }
     margin-bottom: 15px;}
     #mapa{
   width:491px; 
-  height:598px;
+  height: 400px;
 }
 .services__grid {
-     padding-bottom: 0px !important;
+     padding-bottom: 90px !important;
   }
 }
 
