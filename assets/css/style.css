@@ -52,6 +52,10 @@ section#deptos {
   scroll-margin-top: 105px;
 }
 
+#testimonials {
+  scroll-margin-top: 115px;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -91,7 +95,7 @@ section#deptos {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #f0a35f;
 }
 
 #preloader:before {
@@ -99,8 +103,8 @@ section#deptos {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #2c637f;
-  border-top-color: #e7e4fe;
+  border: 6px solid #ffffff;
+  border-top-color: #917cb4;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -343,7 +347,7 @@ button[type='submit']:hover {
   background-color: #8e7caf;
 }
 
-#solo {
+#solo-familias {
   background-color: #4caf50;
   font-size: 14px;
   color: white;
@@ -1165,26 +1169,26 @@ main {
 
 .testimonials .testimonial-item {
   border-radius: 5px;
-  border: 1px solid #eef0ef;
   box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
   margin: 0 15px 0 15px;
   padding: 30px 30px 30px 30px;
-  background: #fff;
+  background: #fae390;
+  color: #b86792;
 }
-.testimonials .testimonial-item p:first-child {
+/* .testimonials .testimonial-item p:first-child {
   font-style: italic;
-}
+} */
 
 .testimonials .testimonial-item .nombre {
   font-size: 1rem;
   font-weight: bold;
-  color: #2c637f;
+  color: #6582bd;
 }
 
 .testimonials .testimonial-item .fecha {
   font-size: 0.8rem;
-  color: #999;
+  color: #8d7caf;
 }
 
 .testimonials .testimonial-item .quote-icon-left {
@@ -1208,11 +1212,11 @@ main {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #2c637f;
+  border: 1px solid #6582bd;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #2c637f;
+  background-color: #8d7caf;
 }
 
 @media (max-width: 767px) {
