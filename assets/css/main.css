@@ -1623,7 +1623,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-image: url(../img/fondo-cielo.jpeg);
+		background-image: url(../img/fondo-cielo.webp);
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;

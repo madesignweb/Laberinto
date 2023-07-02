@@ -99,7 +99,7 @@
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="pt-md-0 d-flex align-items-center justify-content-between">
-          <a href="index.html" class="logo"
+          <a href="index.html" class="logo" title="logo-laberinto"
             ><img
               src="assets/img/brand.webp"
               alt="Logo Laberinto"
@@ -108,35 +108,51 @@
           <div class="social-links ms-3 d-none d-xl-block">
             <a
               href="https://www.facebook.com/profile.php?id=100063806851159"
+              title="logo-facebook"
               target="_blank"
               ><i class="fa-brands fa-facebook-f" alt="icono facebook"></i
             ></a>
-            <a href="https://www.instagram.com/laberintogesell/" target="_blank"
+            <a
+              href="https://www.instagram.com/laberintogesell/"
+              target="_blank"
+              title="logo-instagram"
               ><i class="fa-brands fa-instagram" alt="icono instagram"></i
             ></a>
             <a
               href="https://api.whatsapp.com/send?phone=+5492255624597&text=Hola!%20quisiera%20mas%20informacion%20para alquilar."
               target="_blank"
+              title="logo-whatsapp"
               ><i class="fa-brands fa-whatsapp" alt="icono whatsapp"></i
             ></a>
             <a
               href="mailto:laberintogesell1@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              title="logo-mail"
               ><i class="fa-regular fa-envelope" alt="icono mail"></i
             ></a>
           </div>
         </div>
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li>
-              <a class="nav-link" data-toggle="collapse" href="#services"
+              <a class="nav-link scrollto active" href="#hero" title="home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                title="servicios"
+                href="#services"
                 >Servicios</a
               >
             </li>
             <li>
-              <a class="nav-link" href="#deptos">Departamentos</a>
+              <a class="nav-link" title="departamentos" href="#deptos"
+                >Departamentos</a
+              >
               <!-- <i class="bi bi-chevron-down"></i
                   ></a>
                   <ul>
@@ -158,8 +174,14 @@
                 </li>                 -->
             </li>
 
-            <li><a class="nav-link" href="#exp">Experiencia Laberinto</a></li>
-            <li><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li>
+              <a class="nav-link" title="experiencia-laberinto" href="#exp"
+                >Experiencia Laberinto</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" title="contacto" href="#contacto">Contacto</a>
+            </li>
           </ul>
           <i class="fa-solid fa-bars mobile-nav-toggle"></i>
         </nav>
@@ -177,23 +199,19 @@
       >
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-        <div class="carousel-inner" role="home">
+        <div class="carousel-inner">
           <!-- Slide 1 -->
           <div
             class="carousel-item active"
             style="background-image: url(assets/img/slide/slide-1.webp)"
             alt="Imagen de la entrada de Laberinto"
-            role="slide"
           >
             <div class="carousel-container">
               <div class="container">
-                <h2
-                  class="animate__animated animate__fadeInDown"
-                  role="welcome"
-                >
+                <h2 class="animate__animated animate__fadeInDown">
                   Bienvenidos!
                 </h2>
-                <a href="#services" role="scrolldown"
+                <a href="#services" title="servicios" role="link"
                   ><i
                     class="fa-solid fa-angles-down"
                     style="font-size: 35px; color: white"
@@ -212,17 +230,13 @@
             class="carousel-item"
             style="background-image: url(assets/img/slide/slide-2.webp)"
             alt="Imagen de vegetacion en Laberinto"
-            role="slide"
           >
             <div class="carousel-container">
               <div class="container">
-                <h2
-                  class="animate__animated animate__fadeInDown"
-                  role="welcome"
-                >
+                <h2 class="animate__animated animate__fadeInDown">
                   Bienvenidos!
                 </h2>
-                <a href="#services" role="scrolldown"
+                <a href="#services" title="servicios" role="link"
                   ><i
                     class="fa-solid fa-angles-down"
                     style="font-size: 35px; color: white"
@@ -241,17 +255,13 @@
             class="carousel-item"
             style="background-image: url(assets/img/slide/slide-3.webp)"
             alt="Imagen del chilling point, lugar para compartir"
-            role="slide"
           >
             <div class="carousel-container">
               <div class="container">
-                <h2
-                  class="animate__animated animate__fadeInDown"
-                  role="welcome"
-                >
+                <h2 class="animate__animated animate__fadeInDown">
                   Bienvenidos!
                 </h2>
-                <a href="#services" role="scrolldown"
+                <a href="#services" title="servicios" role="link"
                   ><i
                     class="fa-solid fa-angles-down"
                     style="font-size: 35px; color: white"
@@ -269,8 +279,9 @@
         <a
           class="carousel-control-prev"
           href="#heroCarousel"
-          role="button"
+          role="link"
           data-bs-slide="prev"
+          title="siguiente-slide"
         >
           <span
             class="carousel-control-prev-icon fa-solid fa-chevron-left"
@@ -281,8 +292,9 @@
         <a
           class="carousel-control-next"
           href="#heroCarousel"
-          role="button"
+          role="link"
           data-bs-slide="next"
+          title="siguiente-slide"
         >
           <span
             class="carousel-control-next-icon fa-solid fa-chevron-right"
@@ -419,7 +431,7 @@
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa1">
               <img
                 src="assets/img/numeros/1.webp"
                 class="img-fluid"
@@ -428,7 +440,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa2">
               <img
                 src="assets/img/numeros/2.webp"
                 class="img-fluid"
@@ -437,7 +449,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa3">
               <img
                 src="assets/img/numeros/3.webp"
                 class="img-fluid"
@@ -446,7 +458,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa4y5">
               <img
                 src="assets/img/numeros/4y5.webp"
                 class="img-fluid"
@@ -455,7 +467,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa6">
               <img
                 src="assets/img/numeros/6.webp"
                 class="img-fluid"
@@ -464,7 +476,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa7">
               <img
                 src="assets/img/numeros/7.webp"
                 class="img-fluid"
@@ -473,7 +485,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa8">
               <img
                 src="assets/img/numeros/8.webp"
                 class="img-fluid"
@@ -482,7 +494,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa9">
               <img
                 src="assets/img/numeros/9.webp"
                 class="img-fluid"
@@ -490,7 +502,7 @@
             /></a>
           </div>
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa10">
               <img
                 src="assets/img/numeros/10.webp"
                 class="img-fluid"
@@ -499,7 +511,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa11">
               <img
                 src="assets/img/numeros/11.webp"
                 class="img-fluid"
@@ -507,7 +519,7 @@
             /></a>
           </div>
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa12">
               <img
                 src="assets/img/numeros/12.webp"
                 class="img-fluid"
@@ -516,7 +528,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa21a24">
               <img
                 src="assets/img/numeros/21a24.webp"
                 class="img-fluid"
@@ -525,7 +537,7 @@
           </div>
 
           <div class="div_img">
-            <a href="depa1.html" target="_blank">
+            <a href="depa1.html" target="" title="depa25a28">
               <img
                 src="assets/img/numeros/25a28.webp"
                 class="img-fluid"
@@ -557,40 +569,40 @@
         data-aos-delay="100"
         class="popup-gallery"
       >
-        <a href="assets/exp/1.webp" target="_blank">
+        <a href="assets/exp/1.webp" target="" title="experiencia">
           <img src="assets/exp/1.webp" class="img-fluid" alt="Miniatura"
         /></a>
 
-        <a href="assets/exp/2.webp" target="_blank">
+        <a href="assets/exp/2.webp" target="" title="experiencia">
           <img src="assets/exp/2.webp" class="img-fluid" alt="Miniatura"
         /></a>
 
         <div class="div_img">
-          <a href="assets/exp/3.webp" target="_blank">
+          <a href="assets/exp/3.webp" target="" title="experiencia">
             <img src="assets/exp/3.webp" class="img-fluid" alt="Miniatura"
           /></a>
         </div>
 
         <div class="div_img">
-          <a href="assets/exp/4.webp" target="_blank">
+          <a href="assets/exp/4.webp" target="" title="experiencia">
             <img src="assets/exp/4.webp" class="img-fluid" alt="Miniatura"
           /></a>
         </div>
 
         <div class="div_img">
-          <a href="assets/exp/5.webp" target="_blank">
+          <a href="assets/exp/5.webp" target="" title="experiencia">
             <img src="assets/exp/5.webp" class="img-fluid" alt="Miniatura"
           /></a>
         </div>
 
         <div class="div_img">
-          <a href="assets/exp/6.webp" target="_blank">
+          <a href="assets/exp/6.webp" target="" title="experiencia">
             <img src="assets/exp/6.webp" class="img-fluid" alt="Miniatura"
           /></a>
         </div>
 
         <div class="div_img">
-          <a href="assets/exp/7.webp" target="_blank">
+          <a href="assets/exp/7.webp" target="" title="experiencia">
             <img src="assets/exp/7.webp" class="img-fluid" alt="Miniatura"
           /></a>
         </div>
@@ -857,7 +869,7 @@
       </div>
       <div>
         <div class="contacto">
-          <a href="mailto:laberintogesell1@gmail.com" class="test"
+          <a href="mailto:laberintogesell1@gmail.com" class="test" title="mail"
             ><i class="fa fa-envelope test" alt="icono mail">
               laberintogesell1@gmail.com</i
             ></a
@@ -865,7 +877,7 @@
           <br />
         </div>
         <div class="contacto">
-          <a href="tel:+54 9 2255 624597" class="test"
+          <a href="tel:+54 9 2255 624597" class="test" title="telefono"
             ><i class="fa fa-phone test" alt="icono telefono">
               +54 9 2255 624597</i
             ></a
@@ -873,7 +885,10 @@
           <br />
         </div>
         <div class="contacto">
-          <a href="https://www.instagram.com/laberintogesell" class="test"
+          <a
+            href="https://www.instagram.com/laberintogesell"
+            class="test"
+            title="instagram"
             ><i class="fa fa-instagram test" alt="icono instagram">
               @laberintogesell</i
             ></a
@@ -887,19 +902,24 @@
     <div class="social-links text-center text-md-right pt-md-0">
       <a
         href="https://www.facebook.com/profile.php?id=100063806851159"
+        title="facebook"
         target="_blank"
         ><i class="fa-brands fa-facebook-f"></i
       ></a>
-      <a href="https://www.instagram.com/laberintogesell/" target="_blank"
+      <a
+        href="https://www.instagram.com/laberintogesell/"
+        target="_blank"
+        title="instagram"
         ><i class="fa-brands fa-instagram"></i
       ></a>
       <a
         href="https://api.whatsapp.com/send?phone=+5492255624597&text=Hola!%20quisiera%20mas%20informacion%20para alquilar."
         target="_blank"
         class="linkedin"
+        title="whatsapp"
         ><i class="fa-brands fa-whatsapp"></i
       ></a>
-      <a href="mailto:laberintogesell1@gmail.com" target="_blank"
+      <a href="mailto:laberintogesell1@gmail.com" target="_blank" title="mail"
         ><i class="fa-regular fa-envelope"></i
       ></a>
     </div>
@@ -952,6 +972,7 @@
       href="index.html#"
       class="back-to-top d-flex align-items-center justify-content-center"
       style="bottom: 85px !important"
+      title="home"
       ><i class="fa-solid fa-arrow-up"></i
     ></a>
     <div id="preloader"></div>
