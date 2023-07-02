@@ -275,6 +275,21 @@ color: white; }
 }
 
 
+.div_form{
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-video {
+  display: flex;
+  justify-content: center;
+}
+
+.video-labe {
+  width:360px;
+  margin-bottom: 10px;
+}
 
 /*DIV MAP*/
 
@@ -283,21 +298,11 @@ color: white; }
   justify-content: center;
   
 }
-/*-----*/
-
-/*DIV FORM*/
-
-.div_form{
-  width: 400px;
-  justify-content: center;
-  align-items: center;
-}
 
 #mapa{
-  width:400px; 
-  
+  width:70%;
+  height: 20em; 
 }
-
 
 
 
@@ -835,6 +840,10 @@ color:#8d7cb0 }
   width:491px; 
   height: 400px;
 }
+.video-labe{
+  width: 60%;
+
+}
 .services__grid {
      padding-bottom: 0px !important;
   }
@@ -1042,7 +1051,7 @@ section {
 }
 
 #services {
-  background-image: url(../img/fondo-cielo.jpeg);
+  background-image: url(../img/fondo-cielo.webp);
       background-position: center right;
     background-size: cover;
 }
