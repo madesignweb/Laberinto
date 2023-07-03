@@ -189,16 +189,20 @@
     <!-- End Header -->
     <!--  Hero Section  -->
     <section id="hero">
-      <button class="consultar-precios" type="submit" alt="boton-tarifas">
-        <a href="#contacto" style="color: white">Consultar Tarifas</a>
+      <button
+        class="consultar-precios"
+        type="submit"
+        alt="boton-tarifas"
+        onclick="window.location.href='#contacto'"
+      >
+        Consultar Tarifas
       </button>
-
       <div
         class="div_form div_form_superior"
         alt="formulario contacto"
         style="
           position: absolute;
-          top: 162px;
+          top: 130px;
           right: 80px;
           left: auto;
           z-index: 80;
@@ -210,22 +214,24 @@
           method="POST"
         >
           <label id="solo-familias" for="nombre">Solo para Familias</label>
-          <label for="nombre">Nombre:</label>
+          <!-- <label for="nombre">Nombre:</label> -->
           <input
             class="input-form"
             type="text"
             id="nombre-form-ini"
             name="nombre"
+            placeholder="Nombre:"
             required
           />
 
-          <label for="email">Email:</label>
+          <!-- <label for="email">Email:</label> -->
           <input
             class="input-form"
             type="email"
             id="email-form-ini"
             name="email"
             autocomplete="email"
+            placeholder="Email:"
             required
           />
 
@@ -252,25 +258,27 @@
             >
             <input type="checkbox" id="tiene-mascota" name="tiene-mascota" />
           </div>
-          <label for="cantidad-personas">Cantidad de personas (hasta 7):</label>
+          <!-- <label for="cantidad-personas">Cantidad de personas (hasta 7):</label> -->
           <input
             class="input-form"
             type="number"
             id="cantidad-personas-form-ini"
             name="cantidad-personas"
+            placeholder="Cantidad de personas:"
             min="1"
             max="7"
             required
           />
 
-          <label for="comentarios">Comentarios:</label>
+          <!-- <label for="comentarios">Comentarios:</label> -->
           <textarea
             class="input-form"
             id="comentarios-form-ini"
             name="comentarios"
+            placeholder="Comentarios:"
           ></textarea>
 
-          <button type="submit">Enviar</button>
+          <button type="submit" style="width: 100%">Enviar</button>
         </form>
       </div>
       <div
