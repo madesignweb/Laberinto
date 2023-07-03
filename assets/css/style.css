@@ -196,6 +196,10 @@ section#deptos {
   text-align: center;
 }
 
+.input-form::placeholder {
+  color: #000000;
+}
+
 /*.services__item:hover i {
   transition: all 0.3s;
   color: white;
@@ -277,7 +281,7 @@ section#deptos {
 }
 
 .video-labe {
-  width: 360px;
+  width: 317px;
   margin-bottom: 10px;
 }
 
@@ -847,7 +851,7 @@ button[type='submit']:hover {
     height: 400px;
   }
   .video-labe {
-    width: 60%;
+    width: 80%;
   }
   .services__grid {
     padding-bottom: 0px !important;
@@ -1144,9 +1148,9 @@ main {
   margin: 0;
 }
 
-.input-form {
+/* .input-form {
   color: chocolate !important;
-}
+} */
 
 .videosYT .videoYT-content .publicado {
   margin: 0;

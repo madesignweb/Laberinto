@@ -278,7 +278,9 @@
             placeholder="Comentarios:"
           ></textarea>
 
-          <button type="submit" style="width: 100%">Enviar</button>
+          <button type="submit" style="width: 100%" alt="enviar-formulario">
+            Enviar
+          </button>
         </form>
       </div>
       <div
@@ -758,21 +760,23 @@
             method="POST"
           >
             <label id="solo-familias" for="nombre">Solo para Familias</label>
-            <label for="nombre">Nombre:</label>
+            <!-- <label for="nombre">Nombre:</label> -->
             <input
               class="input-form"
               type="text"
               id="nombre"
               name="nombre"
+              placeholder="Nombre:"
               required
             />
 
-            <label for="email">Email:</label>
+            <!-- <label for="email">Email:</label> -->
             <input
               class="input-form"
               type="email"
               id="email"
               name="email"
+              placeholder="Email:"
               autocomplete="email"
               required
             />
@@ -800,9 +804,9 @@
               >
               <input type="checkbox" id="tiene-mascota" name="tiene-mascota" />
             </div>
-            <label for="cantidad-personas"
+            <!-- <label for="cantidad-personas"
               >Cantidad de personas (hasta 7):</label
-            >
+            > -->
             <input
               class="input-form"
               type="number"
@@ -810,17 +814,21 @@
               name="cantidad-personas"
               min="1"
               max="7"
+              placeholder="Cantidad de personas:"
               required
             />
 
-            <label for="comentarios">Comentarios:</label>
+            <!-- <label for="comentarios">Comentarios:</label> -->
             <textarea
               class="input-form"
               id="comentarios"
               name="comentarios"
+              placeholder="Comentarios:"
             ></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" style="width: 100%" alt="enviar-formulario">
+              Enviar
+            </button>
           </form>
         </div>
 
