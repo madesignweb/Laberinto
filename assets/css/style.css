@@ -299,9 +299,10 @@ section#deptos {
 
 form {
   padding: 20px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 4px;
-  background-color: #f6e8fd;
+  /* background-color: #f6e8fd; */
+  background-color: antiquewhite;
 }
 
 label {
@@ -310,9 +311,9 @@ label {
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.25em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 1.6em;
-  color: #e66467;
+  color: black;
 }
 
 #whatsapp-button {
@@ -334,7 +335,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 10px;
-  background-color: #f0dafa !important;
+  background-color: white !important;
 }
 
 button[type='submit'] {
@@ -353,9 +354,8 @@ button[type='submit']:hover {
 }
 
 #solo-familias {
-  background-color: #4caf50;
   font-size: 14px;
-  color: white;
+  color: black;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -798,7 +798,7 @@ button[type='submit']:hover {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #d9232d;
+  background: #b76892;
 }
 
 #hero .btn-get-started {
