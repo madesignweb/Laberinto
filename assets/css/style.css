@@ -330,7 +330,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 10px;
-  background-color: #f0dafa;
+  background-color: #f0dafa !important;
 }
 
 button[type='submit'] {
@@ -1145,7 +1145,7 @@ main {
 }
 
 .input-form {
-  color: chocolate;
+  color: chocolate !important;
 }
 
 .videosYT .videoYT-content .publicado {
