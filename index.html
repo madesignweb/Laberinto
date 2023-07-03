@@ -58,10 +58,10 @@
     <!-- <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-    /> -->
-    <!--  <link
-            href="assets/vendor/glightbox/css/glightbox.min.css"
-            rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
     /> -->
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
@@ -74,7 +74,12 @@
       }
     </style>
   </head>
-
+  <!-- =======================================================
+  * Template Name: Techie - v4.10.0
+  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
   <body>
     <div id="whatsapp-button">
       <a
@@ -85,7 +90,7 @@
       </a>
     </div>
     <!-- Header  -->
-    <header id="header" class="fixed-top">
+    <header id="header" class="fixed-top" style="z-index: 90">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="pt-md-0 d-flex align-items-center justify-content-between">
           <a href="index.html" class="logo" title="logo-laberinto"
@@ -184,6 +189,89 @@
     <!-- End Header -->
     <!--  Hero Section  -->
     <section id="hero">
+      <button class="consultar-precios" type="submit" alt="boton-tarifas">
+        <a href="#contacto" style="color: white">Consultar Tarifas</a>
+      </button>
+
+      <div
+        class="div_form div_form_superior"
+        alt="formulario contacto"
+        style="
+          position: absolute;
+          top: 162px;
+          right: 80px;
+          left: auto;
+          z-index: 80;
+        "
+      >
+        <form
+          class="form"
+          action="https://formspree.io/f/mgebgqgr"
+          method="POST"
+        >
+          <label id="solo-familias" for="nombre">Solo para Familias</label>
+          <label for="nombre">Nombre:</label>
+          <input
+            class="input-form"
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            class="input-form"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label for="fecha-desde">Fecha desde:</label>
+          <input
+            class="input-form"
+            type="date"
+            id="fecha-desde"
+            name="fecha-desde"
+            required
+          />
+
+          <label for="fecha-hasta">Fecha hasta:</label>
+          <input
+            class="input-form"
+            type="date"
+            id="fecha-hasta"
+            name="fecha-hasta"
+            required
+          />
+          <div class="tiene">
+            <label class="tiene-mascota" for="tiene-mascota"
+              >¿Tiene mascota?</label
+            >
+            <input type="checkbox" id="tiene-mascota" name="tiene-mascota" />
+          </div>
+          <label for="cantidad-personas">Cantidad de personas (hasta 7):</label>
+          <input
+            class="input-form"
+            type="number"
+            id="cantidad-personas"
+            name="cantidad-personas"
+            min="1"
+            max="7"
+            required
+          />
+
+          <label for="comentarios">Comentarios:</label>
+          <textarea
+            class="input-form"
+            id="comentarios"
+            name="comentarios"
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
       <div
         id="heroCarousel"
         data-bs-interval="3000"
@@ -199,7 +287,7 @@
             style="background-image: url(assets/img/slide/slide-1.webp)"
             alt="Imagen de la entrada de Laberinto"
           >
-            <div class="carousel-container">
+            <div class="carousel-container bienvenidos">
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">
                   Bienvenidos!
@@ -220,7 +308,7 @@
             style="background-image: url(assets/img/slide/slide-2.webp)"
             alt="Imagen de vegetacion en Laberinto"
           >
-            <div class="carousel-container">
+            <div class="carousel-container bienvenidos">
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">
                   Bienvenidos!
@@ -241,7 +329,7 @@
             style="background-image: url(assets/img/slide/slide-3.webp)"
             alt="Imagen del chilling point, lugar para compartir"
           >
-            <div class="carousel-container">
+            <div class="carousel-container bienvenidos">
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">
                   Bienvenidos!
@@ -846,7 +934,7 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <!-- <script async src="indexb.js"></script> -->
+    <script async src="indexb.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -893,25 +981,33 @@
         });
       });
     </script>
-
     <script src="assets/vendor/aos/aos.js"></script>
-    <!-- <script
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      window.addEventListener('resize', function () {
+        var container = document.querySelector('.div_form');
+        var heroRect = document.querySelector('#hero').getBoundingClientRect();
+        var rightMargin = window.innerWidth - heroRect.right + 80;
+
+        container.style.right = rightMargin + 'px';
+      });
+    </script>
+
+    <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"
-    ></script> -->
-    <!-- <script
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
-    ></script> -->
-    <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> -->
-    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-
-    <script src="assets/js/main.js"></script>
+    ></script>
+    <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script> -->
   </body>
 </html>

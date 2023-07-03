@@ -178,6 +178,7 @@ section#deptos {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   direction: rtl;
+  padding-bottom: 200px;
 }
 
 .row-exp {
@@ -511,6 +512,10 @@ button[type='submit']:hover {
   visibility: visible;
 }
 
+.consultar-precios {
+  display: none;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -518,6 +523,10 @@ button[type='submit']:hover {
 
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
+  }
+
+  #hero .bienvenidos {
+    display: none !important;
   }
 }
 
@@ -540,6 +549,19 @@ button[type='submit']:hover {
 
   .navbar ul {
     display: none;
+  }
+
+  .div_form_superior {
+    display: none;
+  }
+
+  .consultar-precios {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 80;
   }
 
   .row {
@@ -816,6 +838,9 @@ button[type='submit']:hover {
     width: 100%;
     justify-content: center;
     margin-bottom: 15px;
+  }
+  .div_form_superior {
+    display: none;
   }
   #mapa {
     width: 491px;
