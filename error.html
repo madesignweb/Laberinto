@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Error al enviar el formulario</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="error-container">
+      <img src="assets/img/brand.webp" alt="Logo de Laberinto" class="logo" />
+      <h1>Disculpa, pero hubo un error al enviar el formulario.</h1>
+      <a href="index.html" class="button">Volver a la página de inicio</a>
+      <a
+        href="https://api.whatsapp.com/send?phone=+5492255624597&text=Hola!%20quisiera%20mas%20informacion%20para alquilar."
+        class="button whatsapp"
+        >Enviar consulta por WhatsApp</a
+      >
+    </div>
+  </body>
+</html>
+
+<style>
+  @font-face {
+    font-family: 'BaksoSapi';
+    src: url('fonts/BaksoSapi.otf');
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'BaksoSapi', sans-serif;
+    color: #444444;
+    background: #f0a35f;
+  }
+
+  .error-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+
+  .whatsapp {
+    background-color: #25d366;
+  }
+
+  .button:hover {
+    background-color: #23527c;
+  }
+
+  .whatsapp:hover {
+    background-color: #1aaf6c;
+  }
+</style>
